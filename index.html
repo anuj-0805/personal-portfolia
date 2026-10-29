@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Me — My Personal Portfolio. An introduction to my curiosity for AI, technology, and learning." />
+  <title>About Me — My Personal Portfolio</title>
+  
+  <!-- Google Fonts for modern typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient background lighting effects -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- ========================================================= -->
+  <!-- NAVIGATION BAR                                            -->
+  <!-- ========================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-spark">✦</span>
+        <span class="logo-text">Portfolio<span class="accent-dot">.</span></span>
+      </a>
+
+      <!-- Mobile Hamburger Toggle Button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Me</a></li>
+          <li><a href="#communication" class="nav-link">Communication</a></li>
+          <li><a href="#interests" class="nav-link">Interests</a></li>
+          <li><a href="#ai-journey" class="nav-link">AI Journey</a></li>
+          <li><a href="#projects" class="nav-link">My Project</a></li>
+          <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================= -->
+    <!-- SECTION 1: HOME (Hero)                                   -->
+    <!-- ========================================================= -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content reveal">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>Curious Mind • AI Explorer</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hey, I'm glad <span class="gradient-text">you're here!</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Welcome to my personal portfolio. This space introduces who I am, 
+            driven by a deep curiosity about technology, artificial intelligence, 
+            and how modern digital tools understand and connect with us.
+          </p>
+
+          <div class="hero-tags">
+            <span class="tag">🤖 AI Enthusiast</span>
+            <span class="tag">💡 Question-Driven</span>
+            <span class="tag">🌐 Continuous Learner</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#about" class="btn btn-primary">
+              <span>Explore My Story</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get in Touch</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="avatar-card-wrapper">
+            <!-- Modern Tech Avatar / Profile Illustration -->
+            <!-- NOTE: You can replace this SVG with an <img> tag of your real photo anytime! -->
+            <div class="avatar-glow"></div>
+            <div class="avatar-frame">
+              <svg class="avatar-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#6366f1" />
+                    <stop offset="50%" stop-color="#a855f7" />
+                    <stop offset="100%" stop-color="#3b82f6" />
+                  </linearGradient>
+                  <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#38bdf8" />
+                    <stop offset="100%" stop-color="#818cf8" />
+                  </linearGradient>
+                </defs>
+                <!-- Outer halo ring -->
+                <circle cx="100" cy="100" r="92" stroke="url(#avatarGrad)" stroke-width="3" stroke-dasharray="6 6" class="spin-slow" />
+                <circle cx="100" cy="100" r="82" fill="#0f172a" />
+                <!-- Stylized modern silhouette figure -->
+                <circle cx="100" cy="78" r="32" fill="url(#avatarGrad)" />
+                <path d="M45 160 C45 125, 70 120, 100 120 C130 120, 155 125, 155 160 Z" fill="url(#avatarGrad)" opacity="0.9" />
+                <!-- Futuristic glowing glasses / eyes visor -->
+                <rect x="75" y="72" width="50" height="12" rx="6" fill="#38bdf8" />
+                <circle cx="86" cy="78" r="3" fill="#ffffff" />
+                <circle cx="114" cy="78" r="3" fill="#ffffff" />
+              </svg>
+
+              <!-- Floating mini status badges around avatar -->
+              <div class="floating-badge badge-top-right">
+                <span class="icon">✨</span>
+                <span>Curious 100%</span>
+              </div>
+              <div class="floating-badge badge-bottom-left">
+                <span class="icon">💬</span>
+                <span>Ask &amp; Learn</span>
+              </div>
+            </div>
+            <p class="avatar-caption">
+              <!-- Easy to edit placeholder label -->
+              <span class="avatar-name">[Your Name / Avatar]</span>
+              <span class="avatar-hint">Easily replace with your own image or name in index.html</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SECTION 2: ABOUT ME                                       -->
+    <!-- ========================================================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Curiosity &amp; Mindset</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-description">
+            A look into what makes me tick, my love for inquiry, and my fascination with artificial intelligence.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Card 1 -->
+          <div class="card glass-card reveal">
+            <div class="card-icon gradient-bg-blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            </div>
+            <h3 class="card-title">Curious About AI</h3>
+            <p class="card-text">
+              I am genuinely curious about AI, technology, and how conversational systems like ChatGPT 
+              understand people. Rather than simply using tools on the surface, I enjoy exploring how they interpret language, context, and human intent.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card glass-card reveal">
+            <div class="card-icon gradient-bg-purple">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            </div>
+            <h3 class="card-title">Driven by Questions</h3>
+            <p class="card-text">
+              Every breakthrough begins with asking the right questions. When interacting with technology, 
+              I love probing boundaries: <em>"What does this system know?"</em>, <em>"How does it process input?"</em>, and <em>"How can we use it responsibly?"</em>
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card glass-card reveal">
+            <div class="card-icon gradient-bg-cyan">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3 class="card-title">Privacy &amp; Transparency</h3>
+            <p class="card-text">
+              Exploring AI has made me appreciate the balance between intelligence and privacy. 
+              Understanding how AI respects user boundaries and memory features keeps my exploration grounded in digital literacy.
+            </p>
+          </div>
+        </div>
+
+        <!-- Highlight Quote / Philosophy Box -->
+        <div class="quote-box glass-card reveal">
+          <div class="quote-decor">“</div>
+          <p class="quote-text">
+            “Curiosity is not just about finding answers; it’s about discovering better questions to ask the world and the machines we build.”
+          </p>
+          <div class="quote-author">— Personal Reflection</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SECTION 3: MY COMMUNICATION STYLE                         -->
+    <!-- ========================================================= -->
+    <section class="section alt-bg" id="communication">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">How I Interact</span>
+          <h2 class="section-title">My Communication <span class="gradient-text">Style</span></h2>
+          <p class="section-description">
+            I enjoy casual conversations and expressing my curiosity through questions.
+          </p>
+        </div>
+
+        <div class="communication-layout">
+          <!-- Left side: Pillars of communication -->
+          <div class="comm-pillars reveal">
+            <div class="comm-card glass-card">
+              <div class="comm-icon">💬</div>
+              <div class="comm-info">
+                <h3>Casual &amp; Approachable</h3>
+                <p>
+                  I prefer relaxed, genuine conversations without unnecessary stiffness. Whether texting casually or chatting with an AI assistant, I like keeping communication comfortable, fast, and authentic.
+                </p>
+              </div>
+            </div>
+
+            <div class="comm-card glass-card">
+              <div class="comm-icon">❓</div>
+              <div class="comm-info">
+                <h3>Question-Led Exploration</h3>
+                <p>
+                  My natural way of learning is asking questions. From simple <em>"how does this work?"</em> to deep exploratory inquiries, asking questions helps peel back the layers of complex subjects.
+                </p>
+              </div>
+            </div>
+
+            <div class="comm-card glass-card">
+              <div class="comm-icon">🤝</div>
+              <div class="comm-info">
+                <h3>Open-Minded &amp; Receptive</h3>
+                <p>
+                  Good communication is a two-way street. I value clear explanations, mutual understanding, and being open to new perspectives and feedback.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right side: Visual chat mockup showing the style in practice -->
+          <div class="comm-mockup glass-card reveal">
+            <div class="mockup-header">
+              <div class="mockup-dots">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+              </div>
+              <span class="mockup-title">Conversation Perspective</span>
+            </div>
+
+            <div class="mockup-body">
+              <div class="chat-bubble user-bubble">
+                <p class="bubble-meta">Me</p>
+                <p class="bubble-text">Hey! What do u actually know about me and how does AI remember conversations?</p>
+              </div>
+
+              <div class="chat-bubble ai-bubble">
+                <p class="bubble-meta">AI Assistant</p>
+                <p class="bubble-text">I only know what you share with me in our conversation! I notice you enjoy casual chat, asking great questions, and exploring how technology works — all while keeping your personal privacy safe.</p>
+              </div>
+
+              <div class="chat-bubble user-bubble">
+                <p class="bubble-meta">Me</p>
+                <p class="bubble-text">That’s awesome. Let’s turn this curiosity into a cool portfolio project! 🚀</p>
+              </div>
+            </div>
+
+            <div class="mockup-footer">
+              <span class="mockup-badge">✓ Natural &amp; Inquisitive</span>
+              <span class="mockup-badge">✓ Privacy-Minded</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SECTION 4: MY INTERESTS                                   -->
+    <!-- ========================================================= -->
+    <section class="section" id="interests">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Passions &amp; Focus</span>
+          <h2 class="section-title">My <span class="gradient-text">Interests</span></h2>
+          <p class="section-description">
+            A snapshot of the topics and technologies that capture my enthusiasm and drive my everyday learning.
+          </p>
+        </div>
+
+        <div class="interests-grid">
+          <!-- Interest 1 -->
+          <div class="interest-card glass-card reveal">
+            <div class="interest-header">
+              <div class="interest-icon-box gradient-bg-purple">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 3.2 2 6 5 7.4V20a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2.6c3-1.4 5-4.2 5-7.4a8 8 0 0 0-8-8z"/><path d="M9 10h.01"/><path d="M15 10h.01"/><path d="M9.5 15a3.5 3.5 0 0 0 5 0"/></svg>
+              </div>
+              <span class="interest-number">01</span>
+            </div>
+            <h3 class="interest-title">Artificial Intelligence</h3>
+            <p class="interest-text">
+              Fascinated by Large Language Models, generative AI, and how neural systems understand prompts, reason through problems, and respond naturally.
+            </p>
+            <div class="interest-chips">
+              <span>LLMs</span>
+              <span>Prompting</span>
+              <span>Conversational AI</span>
+            </div>
+          </div>
+
+          <!-- Interest 2 -->
+          <div class="interest-card glass-card reveal">
+            <div class="interest-header">
+              <div class="interest-icon-box gradient-bg-blue">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <span class="interest-number">02</span>
+            </div>
+            <h3 class="interest-title">Technology &amp; Web</h3>
+            <p class="interest-text">
+              Exploring how front-end code, interactive websites, and digital interfaces come together to deliver seamless experiences across devices.
+            </p>
+            <div class="interest-chips">
+              <span>HTML5 / CSS3</span>
+              <span>JavaScript</span>
+              <span>Responsive UI</span>
+            </div>
+          </div>
+
+          <!-- Interest 3 -->
+          <div class="interest-card glass-card reveal">
+            <div class="interest-header">
+              <div class="interest-icon-box gradient-bg-cyan">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              </div>
+              <span class="interest-number">03</span>
+            </div>
+            <h3 class="interest-title">Learning New Things</h3>
+            <p class="interest-text">
+              Embracing a growth mindset where every unfamiliar concept is an opportunity to experiment, build something hands-on, and level up my skills.
+            </p>
+            <div class="interest-chips">
+              <span>Curiosity</span>
+              <span>Growth Mindset</span>
+              <span>Hands-on Projects</span>
+            </div>
+          </div>
+
+          <!-- Interest 4 -->
+          <div class="interest-card glass-card reveal">
+            <div class="interest-header">
+              <div class="interest-icon-box gradient-bg-pink">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+              </div>
+              <span class="interest-number">04</span>
+            </div>
+            <h3 class="interest-title">How Digital Tools Work</h3>
+            <p class="interest-text">
+              Dissecting behind-the-scenes mechanics: developer tools, live servers, automation, APIs, and the protocols that power our digital world.
+            </p>
+            <div class="interest-chips">
+              <span>Developer Tools</span>
+              <span>Automation</span>
+              <span>Live Server</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SECTION 5: MY AI JOURNEY                                  -->
+    <!-- ========================================================= -->
+    <section class="section alt-bg" id="ai-journey">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Exploration &amp; Discovery</span>
+          <h2 class="section-title">My AI <span class="gradient-text">Journey</span></h2>
+          <p class="section-description">
+            How a simple conversation with ChatGPT ignited my curiosity into how AI models learn, what they know about us, and how privacy shapes the experience.
+          </p>
+        </div>
+
+        <!-- Interactive Journey Timeline -->
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-step">Step 01</span>
+              <h3 class="timeline-title">The Spark of Curiosity</h3>
+              <p class="timeline-text">
+                I initiated a conversation with ChatGPT to find out what information it actually had about me. 
+                Instead of making assumptions, I asked direct questions to test its awareness, memory capabilities, and perception.
+              </p>
+              <div class="timeline-insight">
+                <strong>💡 Key Takeaway:</strong> AI only knows what we actively tell it within the conversation.
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-step">Step 02</span>
+              <h3 class="timeline-title">Uncovering Privacy &amp; Boundaries</h3>
+              <p class="timeline-text">
+                I discovered that personal details like my exact age, school, job, address, or private photos were never accessible to the AI. 
+                The system respected privacy boundaries and operated with its memory feature disabled, reinforcing trust in responsible AI design.
+              </p>
+              <div class="timeline-insight">
+                <strong>🔒 Key Takeaway:</strong> Privacy by design is essential for ethical human-AI collaboration.
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-step">Step 03</span>
+              <h3 class="timeline-title">Understanding Personalization</h3>
+              <p class="timeline-text">
+                Even without storing private records, the model adapted to my communication style — noticing my casual phrasing, my preference for concise texting, 
+                and my curiosity-driven questions. This highlighted how intelligent systems can provide relevant, friendly interactions while honoring privacy.
+              </p>
+              <div class="timeline-insight">
+                <strong>🎯 Key Takeaway:</strong> True personalization comes from real-time context, not invasive tracking.
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-step">Step 04</span>
+              <h3 class="timeline-title">From Insight to Building</h3>
+              <p class="timeline-text">
+                Inspired by this exploration, I decided to build a tangible project: this personal portfolio. 
+                Using Google Antigravity and VS Code Live Server, I transformed these ideas into a fully responsive, modern web experience.
+              </p>
+              <div class="timeline-insight">
+                <strong>🚀 Key Takeaway:</strong> Knowledge is most valuable when you use it to create something new.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SECTION 6: MY PROJECT                                     -->
+    <!-- ========================================================= -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">My <span class="gradient-text">Project</span></h2>
+          <p class="section-description">
+            Showcasing the creation of this responsive portfolio website built with modern tools.
+          </p>
+        </div>
+
+        <div class="project-showcase glass-card reveal">
+          <div class="project-media">
+            <!-- Interactive preview mockup card -->
+            <div class="project-browser-frame">
+              <div class="browser-header">
+                <div class="browser-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="browser-address">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                  <span>http://127.0.0.1:5500/index.html (Live Server)</span>
+                </div>
+              </div>
+              <div class="browser-preview-content">
+                <div class="preview-mini-hero">
+                  <div class="mini-badge">✦ Live Preview</div>
+                  <h4 class="mini-title">About Me — My Personal Portfolio</h4>
+                  <p class="mini-text">Dark Navy • Purple &amp; Blue Gradients • 100% Responsive</p>
+                  <div class="mini-stats">
+                    <div class="mini-stat">
+                      <span class="stat-val">3</span>
+                      <span class="stat-lbl">Core Files</span>
+                    </div>
+                    <div class="mini-stat">
+                      <span class="stat-val">0</span>
+                      <span class="stat-lbl">Dependencies</span>
+                    </div>
+                    <div class="mini-stat">
+                      <span class="stat-val">100%</span>
+                      <span class="stat-lbl">Customizable</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-details">
+            <div class="project-badge">Featured Showcase</div>
+            <h3 class="project-heading">Personal Portfolio Website</h3>
+            <p class="project-summary">
+              A modern, attractive, and responsive personal website created using 
+              <strong>Google Antigravity</strong> and run locally with the <strong>Live Server</strong> extension in Visual Studio Code.
+            </p>
+
+            <div class="project-feature-list">
+              <div class="feature-item">
+                <span class="check-icon">✓</span>
+                <span>Crafted with clean, semantic HTML5, modern CSS3, and vanilla JavaScript.</span>
+              </div>
+              <div class="feature-item">
+                <span class="check-icon">✓</span>
+                <span>Dark navy aesthetic featuring purple and blue gradient accents and glassmorphism.</span>
+              </div>
+              <div class="feature-item">
+                <span class="check-icon">✓</span>
+                <span>Fully responsive across smartphones, tablets, laptops, and desktop monitors.</span>
+              </div>
+              <div class="feature-item">
+                <span class="check-icon">✓</span>
+                <span>Smooth scroll spy navigation, mobile menu, and interactive animations.</span>
+              </div>
+              <div class="feature-item">
+                <span class="check-icon">✓</span>
+                <span>Easily editable text and placeholder fields designed for beginner-friendly personalization.</span>
+              </div>
+            </div>
+
+            <div class="tech-stack">
+              <span class="tech-chip">HTML5</span>
+              <span class="tech-chip">CSS3</span>
+              <span class="tech-chip">JavaScript (ES6)</span>
+              <span class="tech-chip">Google Antigravity</span>
+              <span class="tech-chip">VS Code Live Server</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="#home" class="btn btn-secondary btn-sm">
+                <span>Back to Top</span>
+              </a>
+              <a href="#contact" class="btn btn-primary btn-sm">
+                <span>Connect With Me</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SECTION 7: CONTACT                                        -->
+    <!-- ========================================================= -->
+    <section class="section alt-bg" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-description">
+            Have questions, ideas, or want to chat about AI and technology? Feel free to reach out!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info reveal">
+            <div class="info-card glass-card">
+              <div class="info-icon gradient-bg-blue">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <h4 class="info-title">Email</h4>
+                <p class="info-val">[your.email@example.com]</p>
+                <span class="info-hint">Click or edit in index.html</span>
+              </div>
+            </div>
+
+            <div class="info-card glass-card">
+              <div class="info-icon gradient-bg-purple">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h4 class="info-title">Location</h4>
+                <p class="info-val">[Your City, State / Country]</p>
+                <span class="info-hint">Editable placeholder</span>
+              </div>
+            </div>
+
+            <div class="info-card glass-card">
+              <div class="info-icon gradient-bg-cyan">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div>
+                <h4 class="info-title">Social Links</h4>
+                <div class="social-links-list">
+                  <a href="#" class="social-pill" target="_blank" rel="noopener noreferrer">GitHub: [your-github]</a>
+                  <a href="#" class="social-pill" target="_blank" rel="noopener noreferrer">LinkedIn: [your-linkedin]</a>
+                  <a href="#" class="social-pill" target="_blank" rel="noopener noreferrer">Twitter/X: [your-handle]</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Customization Reminder Box -->
+            <div class="custom-note glass-card">
+              <span class="note-icon">📝</span>
+              <p>
+                <strong>Personalization Tip:</strong> Replace the placeholder email, location, and social links above with your actual details whenever you're ready!
+              </p>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper glass-card reveal">
+            <h3 class="form-title">Send a Message</h3>
+            <p class="form-subtitle">Fill in the fields below to simulate sending a message.</p>
+
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Alex" required />
+                <span class="error-msg" id="nameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="e.g. alex@example.com" required />
+                <span class="error-msg" id="emailError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="What would you like to discuss?" required />
+                <span class="error-msg" id="subjectError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+                <span class="error-msg" id="messageError"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+
+              <div class="form-status" id="formStatus" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================= -->
+  <!-- FOOTER                                                    -->
+  <!-- ========================================================= -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <a href="#home" class="logo">
+          <span class="logo-spark">✦</span>
+          <span>Portfolio<span class="accent-dot">.</span></span>
+        </a>
+        <p class="footer-tagline">Made with curiosity and creativity.</p>
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+          <span>Top</span>
+        </button>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Personal Portfolio. All text is customizable.</p>
+        <p class="footer-subtext">Powered by HTML5, CSS3, JavaScript, &amp; Google Antigravity.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
+
